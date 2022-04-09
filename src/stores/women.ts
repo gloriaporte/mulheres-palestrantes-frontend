@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
 interface IWoman {
-	icon: string
+	photo: string
 	name: string
-	tags: string[]
+	email?: string
+	interests: string[]
 	location: string
 	links: {
 		facebook?: string
@@ -19,9 +20,9 @@ export const useWomanStore = defineStore({
 	state: () => ({
 		all: [
 			{
-				icon: 'https://secure.gravatar.com/avatar/07ac697bcff40050a82cb4503de9eb68?r=PG&d=http://insideoutproject.xyz/mulheres-palestrantes/img/placeholder-female.jpg',
+				photo: 'https://secure.gravatar.com/avatar/07ac697bcff40050a82cb4503de9eb68?r=PG&d=http://insideoutproject.xyz/mulheres-palestrantes/img/placeholder-female.jpg',
 				name: 'Alda Rocha',
-				tags: [
+				interests: [
 					'UX design',
 					'Front-end',
 					'Rails',
@@ -40,9 +41,9 @@ export const useWomanStore = defineStore({
 				},
 			},
 			{
-				icon: 'https://secure.gravatar.com/avatar/3ab1d4a265ad9289afe10956a78271df?r=PG&d=http://insideoutproject.xyz/mulheres-palestrantes/img/placeholder-female.jpg',
+				photo: 'https://secure.gravatar.com/avatar/3ab1d4a265ad9289afe10956a78271df?r=PG&d=http://insideoutproject.xyz/mulheres-palestrantes/img/placeholder-female.jpg',
 				name: 'Amanda Vilela',
-				tags: ['Front-end', 'UI design', 'Web design'],
+				interests: ['Front-end', 'UI design', 'Web design'],
 				location: 'Sorocaba/SP',
 				links: {
 					github: 'https://github.com/amandavilela',

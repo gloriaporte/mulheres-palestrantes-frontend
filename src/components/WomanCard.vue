@@ -13,13 +13,13 @@ function getProperty<T, K extends keyof T>(o: T, propertyName: K): T[K] {
 </script>
 
 <template>
-   <div class="WomanCard">
+   <article class="WomanCard">
       <header>
-         <img :src="woman.icon" :alt="woman.name" />
+         <img :src="woman.photo" :alt="woman.name" />
          <h3 v-text="woman.name"></h3>
       </header>
       <main>
-         <span v-for="tag in woman.tags">{{ tag }}</span>
+         <span v-for="tag in woman.interests">{{ tag }}</span>
       </main>
       <footer>
          <p>{{ woman.location }}</p>
@@ -40,13 +40,13 @@ function getProperty<T, K extends keyof T>(o: T, propertyName: K): T[K] {
             </a>
          </div>
       </footer>
-   </div>
+   </article>
 </template>
 
 
 
 <style scoped lang="scss">
-div.WomanCard {
+article {
    background: #fff;
    padding: 1.5rem 1rem;
    width: 270px;
