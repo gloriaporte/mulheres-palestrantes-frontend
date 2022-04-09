@@ -7,8 +7,9 @@ interface IWoman {
 	links: {
 		facebook?: string
 		twitter?: string
-		linkedin?: string
 		github?: string
+		behance?: string
+		linkedin?: string
 		other?: string
 	}
 }

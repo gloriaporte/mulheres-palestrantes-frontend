@@ -152,11 +152,6 @@ footer {
          font-size: 40px;
          margin-top: -8px;
 
-         .fa-github-square {
-            color: rgb(115, 42, 130);
-            filter: drop-shadow(0px 2px 10px rgb(115 42 130));
-         }
-
          .fa-facebook-square {
             color: #3b5998;
             filter: drop-shadow(0px 2px 10px rgb(59 89 152));
@@ -165,6 +160,16 @@ footer {
          .fa-twitter-square {
             color: #006dbf;
             filter: drop-shadow(0px 2px 10px rgb(0 109 191));
+         }
+
+         .fa-github-square {
+            color: #732a82;
+            filter: drop-shadow(0px 2px 10px rgb(115 42 130));
+         }
+
+         .fa-behance-square {
+            color: #0057ff;
+            filter: drop-shadow(0px 2px 10px rgb(0 87 255));
          }
 
          .fa-linkedin {
