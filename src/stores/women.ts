@@ -53,6 +53,8 @@ export const useWomanStore = defineStore({
 			},
 		] as IWoman[],
 	}),
-	getters: {},
+	getters: {
+		count: store => store.all.length,
+	},
 	actions: {},
 })

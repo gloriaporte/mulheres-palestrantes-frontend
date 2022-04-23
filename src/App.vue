@@ -11,6 +11,7 @@ const store = useWomanStore()
    <section>
       <h2>Procurando mulheres para palestrar em seu evento?</h2>
       <h3>O Mulheres Palestrantes é uma lista de mulheres que falam sobre assuntos relacionados a programação, design, empreendedorismo e tecnologia num geral.</h3>
+      <p>Hoje temos um total de {{ store.count || 0 }} mulheres cadastradas.</p>
    </section>
    <main>
       <WomanCard v-for="woman in store.all" :woman="woman" />
@@ -44,6 +45,10 @@ const store = useWomanStore()
          font-size: 24px;
          color: #444;
          font-weight: 700;
+      }
+
+      p {
+         margin-top: 48px;
       }
    }
 
